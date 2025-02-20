@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Great Vibes", serif;
+  color: #0A1F44;
+  background-image: url("https://cdn.pixabay.com/photo/2016/07/30/20/52/vintage-1557993_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.diary {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#sunday {
+  position: absolute;
+  top: 255px;
+  left: 90px;
+  font-size: 16px;
+}
+
+#textSunday {
+  position: absolute;
+  top: 271px;
+  left: 50px;
+  width: 35%;
+  font-size: 8.35px;
+  white-space: pre-wrap;
+}
+
+#friday {
+  position: absolute;
+  top: 255px;
+  font-size: 16px;
+}
+
+.diary-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ }
+
+.paper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  perspective: 1500px;
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.front {
+  z-index: 1;
+  backface-visibility: hidden;
+}
+
+.back {
+  z-index: 0;
+}
+
+.front-content, .back-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-content {
+  transform: rotateY(180deg);
+}
+
+.flipped .front, .flipped .back {
+  transform: rotateY(-180deg);
+}
+
+#prev-btn {
+  display: flex;
+  opacity: 0;
+  width: 300%;
+  height: 40%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#next-btn {
+  display: flex;
+  opacity: 0;
+  width: 300%;
+  height: 40%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#p1 {
+  z-index: 2;
+}
+
+#p2 {
+  z-index: 1;
+}
+
+.language-switcher {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.language-switcher button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  color: rgba(59, 37, 25, 1);
+  text-shadow: 0 0 9px #FFF8D1;
+}
+
+.language-switcher button img {
+  width: 64px;
+}
+
+#ukrainian-btn img {
+  transform: scaleX(-1);
+}
+
+.language-switcher button span {
+  font-size: 16px;
+}
+
+.signature {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  width: 100px;
+}
