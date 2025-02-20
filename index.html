@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Щоденник Годувальниці з трагедії «Ромео і Джульєтта»</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./main.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+  <img src="images/signature.png" alt="Підпис автору сайта" class="signature">
+  <img src="images/diary.png" alt="Щоденник" class="diary">
+  <h1 id="sunday">Неділя</h1>
+  <p id="textSunday">Ох, який же сьогодні був несподіваний день!<br>Будинок Капулеттів був повний балачок про ранкову бійку на вулицях. От ті гарячі чоловіки, завжди в біді — дурні, всі вони.<br>А моя Джульєтта — ох, моя Джульєтта, — як вона зростає, так швидко! Ледве чотирнадцять літочок вона знала, а вже її мати балакає про шлюб. Я пам’ятаю, як доглядала своє ягнятко, а тепер вона має стати нареченою! Ледь можу повірити. Сьогодні синьйора Капулетті викликала мене й наказала покликати Джульєтту, щоб поговорити про графа Паріса. Чудова людина, гадаю — благородний, симпатичний, пара справді вдала, без сумніву. Але моя дівчинка, моя мила Джульєтта — вона ще лише дитинча! Вона казала, що, може, й сподобається, але я чую той тон — не так палко, як слід. Молюся, щоб вона знайшла щастя, адже що може бути важливішим?<br>Потім настав бенкет! Я допомагала своїй пташці зашнурувати сукню, підкосуючи її про</p>
+  <h1 id="friday">П'ятниця</h1>
+  <p id="textFriday">Текст</p>
+
+  <div class="language-switcher">
+    <button id="english-btn" aria-label="Switch to English">
+      <img src="images/inkpot.png" alt="English">
+      <span>English</span>
+    </button>
+    <button id="ukrainian-btn" aria-label="Перейти на українську">
+      <img src="images/feather-inkpot.png" alt="Українська">
+      <span>Українська</span>
+    </button>
+  </div>
+
+  <!-- Previous Button -->
+  <button id="prev-btn"></button>
+
+  <!-- Diary -->
+  <div id="diary" class="diary-container">
+    <!-- Paper 1 -->
+    <div id="p1" class="paper">
+      <div class="front">
+        <img src="images/right-page.png" alt="Права сторінка">
+        <div id="f1" class="front-content">
+          <p id="textSunday2">молодого Паріса. „Та квітка він, то правда,“ казала я, а вона лише закочувала очі. Яке було видовисько — шовки, маски, музика така чудова, що навіть мої старенькі ноги хотіли потанцювати. І ось, що трапилось? Та проклята клятість — Монтеккі! Молодик у масці, повний шарму й гарних слів, і очі Джульєтти знайшли його. А його очі знайшли її — я знаю цей погляд. Кохання з першого погляду — дурна мрія. Та й вони поцілувалися! Коли вона, шепочучи, потягнула за мій рукав: „Хто ж цей джентльмен?“, я пішла дізнатися, і ох, моє серце майже розбилося. Монтеккі! З усіх хлопців Верони вона обрала його. Та її усмішка… Нагадує мені про мою Сусан. Нехай Бог охороняє її душу… Завжди чую балачки про злі вчинки Монтекків, але в його очах бачу доброту й любов. Можливо, я занадто поспішна судити всіх Монтекків як лихих. Та може, ця пара знайде спокій, — принаймні, так я сподіваюся.</p>
+        </div>
+      </div>
+      <div class="back">
+        <img src="images/left-page.png" alt="Ліва сторінка">
+        <div id="b1" class="back-content">
+          <h1 id="monday">Понеділок</h1>
+          <p id="textMonday">Текст</p>
+          <h1 id="tuesday">Вівторок</h1>
+          <p id="textTuesday">Текст</p>
+        </div>
+      </div>
+    </div>
+    <!-- Paper 2 -->
+    <div id="p2" class="paper">
+      <div class="front">
+        <img src="images/right-page.png" alt="Права сторінка">
+        <div id="f2" class="front-content">
+          <h1 id="wed">Середа</h1>
+          <p id="textWed">Текст</p>
+        </div>
+      </div>
+      <div class="back">
+        <img src="images/left-page.png" alt="Ліва сторінка">
+        <div id="b2" class="back-content">
+          <h1 id="thursday">Четвер</h1>
+          <p id="textThursday">Текст</p>
+        </div>
+      </div>
+    </div>
+    <!-- Paper 3 -->
+    <div id="p3" class="paper">
+      <div class="front">
+        <img src="images/right-page.png" alt="Права сторінка">
+        <div id="f3" class="front-content">
+          <h1 id="wed">Середа</h1>
+          <p id="textWed">Текст</p>
+        </div>
+      </div>
+      <div class="back">
+        <img src="images/left-page.png" alt="Ліва сторінка">
+        <div id="b3" class="back-content">
+          <h1 id="thursday">Четвер</h1>
+          <p id="textThursday">Текст</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Next Button -->
+  <button id="next-btn"></button>
+</body>
+  </html>
