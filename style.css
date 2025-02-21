@@ -58,6 +58,10 @@ body {
 .paper {
   position: absolute;
   perspective: 1500px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%
 }
 
 .front, .back {
@@ -78,26 +82,29 @@ body {
   z-index: 0;
 }
 
+.front-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+.back-content {
+  transform: rotateY(180deg);
+}
+
 .headers {
   position: relative;
   display: flex;
+  justify-content:
   align-items: center;
   width: 35%;
   font-size: 16px;
 }
 
 .text {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 35%;
   font-size: 8.35px;
   white-space: pre-wrap;
-}
-
-.back-content {
-  transform: rotateY(180deg);
 }
 
 .flipped .front, .flipped .back {
@@ -106,7 +113,6 @@ body {
 
 #prev-btn {
   display: flex;
-  opacity: 0;
   width: 300%;
   height: 40%;
   justify-content: flex-start;
@@ -115,7 +121,6 @@ body {
 
 #next-btn {
   display: flex;
-  opacity: 0;
   width: 300%;
   height: 40%;
   justify-content: flex-end;
@@ -171,4 +176,4 @@ body {
   left: 10px;
   display: flex;
   width: 100px;
-}
+  }
